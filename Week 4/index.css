@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+@media screen and (max-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 95%);
+    }
+    
+    .container {
+        display: flex;
+        margin-top: 8rem;
+    }
+    
+    h2 {
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+        color: hsl(0, 0%, 95%);
+    }
+    
+    p {
+        font-size: 15px;
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    
+    .box {
+        max-width: 15rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    
+    .box .icon_header_parag {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+    
+    .box1 {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .box2 {
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .box3 {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 10px 10px 0;
+    }
+    
+    button {
+        height: 2.5rem;
+        display: block;
+        width: 7.5rem;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 2px solid hsl(0, 0%, 95%);
+        background-color: hsl(0, 0%, 95%);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    button.box1Btn {
+        color: hsl(31, 77%, 52%);
+    }
+    
+    button.box2Btn {
+        color: hsl(184, 100%, 22%);
+    }
+    
+    button.box3Btn {
+        color: hsl(179, 100%, 13%);
+    }
+    
+    button:hover {
+        background: transparent;
+        color: hsl(0, 0%, 95%);
+    }
+
+    a {
+        display: block;
+        margin: 2rem auto;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: black;
+        color: hsl(0, 0%, 95%);
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        border-radius: 0;
+    }
+
+    .box1 {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .box3 {
+        border-radius: 0 0 10px 10px;
+    }
+}
