@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="login.html" method="post">
+        <h1>REGISTRATION</h1>
+        <label for="fname">First Name 
+          <input type="text" name="fname" id="fname" required/>
+        </label>
+        
+        <label for="lname">Last Name 
+          <input type="text" name="lname" id="lname" required/>
+        </label>
+        
+         <label for="p_number">Phone Number<input type="number" name="p_number" id="p_number" required/>
+         </label>
+        
+        
+        <label for="email">Email 
+          <input type="email" name="email" id="email" required/>
+        </label>
+        
+        
+        <label for="gender">Gender
+          <select name="gender" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </label>
+        
+        
+        <label for="dob">Date Of Birth
+          <input type="date" name="dob" id="dob" required/>
+        </label>
+        
+        <label for="fav_color">Favorite Color   <input type="color" name="fav_color" id="fav_color" />
+        </label>
+        
+        
+        <input type="submit" name="register" id="register" value="Register" />
+      </form>
+      
+    </div>
+  </body>
+</html> 
